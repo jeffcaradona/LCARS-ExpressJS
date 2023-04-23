@@ -1,0 +1,19 @@
+<!-- nav.ejs - Backup relocated into links.ejs-->
+
+<% for (var i=0; i < links.length; i++) { %>
+  <% console.info(links[i]);%>
+    <% if (links[i].div_id=='blank' ) { %>
+      <div id="<%= links[i].div_id%>"></div>
+    <% }else { %>
+      <a  href="<%= links[i].href %>"
+          title="<%= links[i].title %>" 
+          target="<%= links[i].target %>"
+          class="<%= links[i].class %>" 
+          id="<%= links[i].id %>"
+      >
+          <%= links[i].icon %><span>
+              <%= links[i].text %>
+            </span>
+        </a>
+        <% } %>
+          <% } %>

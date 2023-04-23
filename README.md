@@ -9,7 +9,7 @@ Initial Setup:
 
     This requires Node.JS npm and the express Generator
     > npm install -g express
-    > express --view=ejs LCARS-Express
+    > express --view=ejs LCARS-ExpressJS
 
 After cloning:
 
