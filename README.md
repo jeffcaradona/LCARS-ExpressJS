@@ -30,3 +30,5 @@ After cloning:
 
     run the app from windows power shell:
     > $env:DEBUG='LCARS-ExpressJS:*'; npm start
+
+    Browse to http://localhost:1701/
