@@ -5,7 +5,13 @@ So far nothing has actually been implemented. It's simply the express/ejs boiler
 
 About me: I'm learning ExpressJS and EJS for work. I have very little idea about what I'm doing at this point. Keep that in mind before forking anything.
 
-After cloning: 
+Initial Setup:
+
+    This requires Node.JS npm and the express Generator
+    > npm install -g express
+    > express --view=ejs LCARS-Express
+
+After cloning:
 
     change directory:
     > cd LCARS-ExpressJS

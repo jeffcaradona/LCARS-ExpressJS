@@ -1,0 +1,9 @@
+<!-- navbar.ejs -->
+<nav>
+    <% for (var i = 0; i < navbar.links.length; i++) { %>
+        <a href="<%= navbar.links[i].href %>" title="<%= navbar.links[i].title %>" target="<%= navbar.links[i].target %>"  id="<%= navbar.links[i].id %>" >
+            <%= navbar.links[i].icon %>
+            <span ><%= (i+1).toString().padStart(2, '0') %> <%= navbar.links[i].text %></span>
+          </a>      
+    <% } %>
+</nav>
