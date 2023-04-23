@@ -6,6 +6,7 @@ So far nothing has actually been implemented. It's simply the express/ejs boiler
 About me: I'm learning ExpressJS and EJS for work. I have very little idea about what I'm doing at this point. Keep that in mind before forking anything.
 
 After cloning: 
+
     change directory:
     > cd LCARS-ExpressJS
 
