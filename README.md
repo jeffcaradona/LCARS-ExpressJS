@@ -26,7 +26,7 @@ After cloning:
     > npm install
 
     run the app from windows command prompt:
-    > SET DEBUG=lcars-expressjs:* & npm start
+    > SET DEBUG=LCARS-expressJS:* & npm start
 
     run the app from windows power shell:
-    > $env:DEBUG='LCARS-Express:*'; npm start
+    > $env:DEBUG='LCARS-ExpressJS:*'; npm start
