@@ -6,6 +6,7 @@ So far a few of the links and lists have been moved into partial templates popul
 About me: I'm learning ExpressJS and EJS for work. I have very little idea about what I'm doing at this point. Keep that in mind before forking anything.
 
 Initial Setup if not cloning the repository:
+
     This requires Node.JS npm and the express Generator
     > npm install -g express
     > express --view=ejs LCARS-ExpressJS
