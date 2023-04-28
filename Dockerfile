@@ -16,4 +16,4 @@ RUN npm install
 COPY . .
 
 EXPOSE 1701
-CMD [ "node", "app.js" ]
+CMD [ "node", "./bin/www" ]

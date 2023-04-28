@@ -1,5 +1,5 @@
 # LCARS-ExpressJS
-An Express.js and EJS implimentaion of the LCARS interface implimented by Jim Robertus @ https://www.thelcars.com/
+An Express.js and EJS implementation of the LCARS interface implemented  by Jim Robertus @ https://www.thelcars.com/
 
 So far a few of the links and lists have been moved into partial templates populated by the EJS include tag and passed a json string. 
 
