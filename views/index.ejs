@@ -2,83 +2,18 @@
 <html>
 
 <head>
-  <%- include('partials/head.ejs') %>
+	<%- include('partials/head.ejs') %>
 </head>
 
 
 <body>
 	<div class="wrap-everything">
-    <!--id="column-1"-->
-    <section id="column-1">
-			<div class="lcars-frame">
-				<div class="frame-col-1">
-					<div class="frame-col-1-cell-a"></div>
-					<div class="frame-col-1-cell-b"></div>
-					<div class="frame-col-1-cell-c"></div>
-				</div>
-				<div class="frame-col-2"> </div>
-				<div class="frame-col-3 display-vertical">
-					<div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div>
-				</div>
-				<div class="frame-col-4"> </div>
-				<div class="frame-col-5">
-					<div class="frame-col-5-cell-a"></div>
-					<div class="frame-col-5-cell-b"></div>
-					<div class="frame-col-5-cell-c"></div>
-				</div>
-			</div>
-			<div class="pillbox">
-				<div class="pill"><a href="">J-001</a></div>
-				<div class="pill"><a href="">R-002</a></div>
-				<div class="pill"><a href="">R-003</a></div>
-				<div class="pill"><a href="">I-004</a></div>
-				<div class="pill"><a href="">C-005</a></div>
-				<div class="pill"><a href="">A-006</a></div>
-			</div>
-			<div class="lcars-list-2 uppercase">
-				<%- include('partials/list-items.ejs',{
-					items: [
-						{text:'Subspace Link: Established'},
-						{text:'Starfleet Database: Connected'},
-						{text:'Quantum Memory Field: stable'},						
-						{text:'Optical Data Network: rerouting', class:'oc-almond-creme go-almond-creme'}
-					]
-				}) %>
-			</div>
-			<div class="pillbox">
-				<div class="pill-2"><a href="">F12-22</a></div>
-				<div class="pill-2"><a href="">G24-22</a></div>
-				<div class="pill-2"></div>
-				<div class="pill-2"><a href="">H-07AM</a></div>
-				<div class="pill-2"><a href="">I50-72</a></div>
-				<div class="pill-2"><a href="">J5369</a></div>
-			</div>
+		<!--id="column-1"-->
+		<section id="column-1">
+			<%- include('partials/column-1.ejs') %>
 		</section><!--id="column-1"-->
-		<section id="column-2"><!--id="column-2"-->
-			<div class="section-2-panel-a"> AA-1524 </div>
-			<div class="section-2-buttons">
-				<%- include('partials/links.ejs', 
-				{
-				  
-					links: [ 
-							  { 
-								href: '' , target: "" , icon: '' , id: "" , title: '', class:'', text: 'JS2B-01'
-							  },  {
-								href: '' , target: "" , icon: '' , id: "" , title: '', class:'', text: 'IS2B-02'
-							  }, {
-								href: '' , target: "" , icon: '' , id: "" ,title: '', class:'', text: 'MS2B-03'
-							   }
-							] 
-				  
-				  }
-				  ) %>
-			</div>
-			<div>
-				<div class="section-2-panel-b"> <a href="">B2-0730</a> </div>
-				<div class="section-2-panel-c">C-318</div>
-				<div class="section-2-panel-d">DL-44</div>
-				<div class="section-2-panel-e">E-3504</div>
-			</div>
+		<section id="column-2"><!--id="column-2"-->			
+			<%- include('partials/column-2.ejs') %>
 		</section><!--id="column-2"-->
 		<section id="column-3"><!--id="column-13"-->
 			<div class="wrap">
@@ -91,34 +26,31 @@
 					<div class="banner"> LCARS &#149; <span class="blink">Online</span> </div>
 					<div class="data-cascade-button-group">
 						<div class="cascade-wrapper">
-							<div class="data-cascade" id="default">								
-								<div class="row-1"><div class="dc1">101</div><div class="dc2">7109</div><div class="dc3">1966</div><div class="dc4">36</div><div class="dc5">880</div><div class="dc6">11.03</div><div class="dc7">1954</div><div class="dc8">03</div><div class="dc9">6.08</div><div class="dc10">241</div><div class="dc11">309</div><div class="dc12">7.08</div><div class="dc13">1935</div><div class="dc14">12.20</div><div class="dc15">53</div><div class="dc15">1961</div><div class="dc15">2.16</div></div><div class="row-2"><div class="dc1">102</div><div class="dc2">8102</div><div class="dc3">1987</div><div class="dc4">044</div><div class="dc5">0051</div><div class="dc6">1968</div><div class="dc7">704</div><div class="dc8">10.31</div><div class="dc9">1984</div><div class="dc10">1954</div><div class="dc11">764</div><div class="dc12">1940</div><div class="dc13">9.9</div><div class="dc14">1972</div><div class="dc15">815</div><div class="dc15">4.12</div><div class="dc15">2023</div></div><div class="row-3"><div class="dc1">103</div><div class="dc2">714</div><div class="dc3">1993</div><div class="dc4">0222</div><div class="dc5">4.4</div><div class="dc6">1969</div><div class="dc7">2450</div><div class="dc8">91</div><div class="dc9">56</div><div class="dc10">21</div><div class="dc11">716</div><div class="dc12">801</div><div class="dc13">417</div><div class="dc14">602</div><div class="dc15">5618</div><div class="dc15">238</div><div class="dc15">1443</div></div><div class="row-4"><div class="dc1">104</div><div class="dc2">6104</div><div class="dc3">1995</div><div class="dc4">3.22</div><div class="dc5">1931</div><div class="dc6">0.0</div><div class="dc7">0000</div><div class="dc8">1701</div><div class="dc9">1984</div><div class="dc10">218</div><div class="dc11">908</div><div class="dc12">10</div><div class="dc13">85</div><div class="dc14">1888</div><div class="dc15">27</div><div class="dc15">2879</div><div class="dc15">213</div></div><div class="row-5"><div class="dc1">105</div><div class="dc2">08</div><div class="dc3">2001</div><div class="dc4">713</div><div class="dc5">079</div><div class="dc6">1977</div><div class="dc7">LV</div><div class="dc8">426</div><div class="dc9">105</div><div class="dc10">10</div><div class="dc11">1642</div><div class="dc12">1979</div><div class="dc13">402</div><div class="dc14">795</div><div class="dc15">361</div><div class="dc15">0852</div><div class="dc15">984</div></div><div class="row-6"><div class="dc1">106</div><div class="dc2">31</div><div class="dc3">2017</div><div class="dc4">429</div><div class="dc5">65</div><div class="dc6">871</div><div class="dc7">24</div><div class="dc8">541</div><div class="dc9">656</div><div class="dc10">M</div><div class="dc11">113</div><div class="dc12">12.6</div><div class="dc13">27</div><div class="dc14">05</div><div class="dc15">85</div><div class="dc15">12.25</div><div class="dc15">7884</div></div><div class="row-7"><div class="dc1">107</div><div class="dc2">5</div><div class="dc3">2022</div><div class="dc4">784</div><div class="dc5">3304</div><div class="dc6">42</div><div class="dc7">733</div><div class="dc8">1224</div><div class="dc9">5801</div><div class="dc10">23</div><div class="dc11">1015</div><div class="dc12">84</div><div class="dc13">36</div><div class="dc14">029</div><div class="dc15">24</div><div class="dc15">318</div><div class="dc15">12.24</div></div><div class="row-8"><div class="dc1">108</div><div class="dc2">23</div><div class="dc3">174</div><div class="dc4">91</div><div class="dc5">947</div><div class="dc6">28</div><div class="dc7">527</div><div class="dc8">04</div><div class="dc9">0469</div><div class="dc10">2200</div><div class="dc11">88</div><div class="dc12">1985</div><div class="dc13">540</div><div class="dc14">3121</div><div class="dc15">308</div><div class="dc15">9571</div><div class="dc15">404</div></div>
-							</div>
+							<div class="data-cascade" id="default">
+								<%- include('partials/data-cascade.ejs',{
+									cascade: [
+										[101, 7109, 1966, 36, 880, 11.03, 1954, 03, 6.08, 241, 309, 7.08, 1935, 12.20],
+										[102, 8102, 1987, 044, 0051, 1968, 704, 10.31, 1984, 1954, 764, 1940, 9.9, 1972],
+										[103, 714, 1993, 0222, 4.4, 1969, 2450, 91, 56, 21, 716, 801, 417, 602],
+										[104, 6104, 1995, 3.22, 1931, 0.0, 0000, 1701, 1984, 218, 908, 10, 85, 1888],
+										[105, 08, 2001, 713, 079, 1977, 'LV', 426, 105, 10, 1642, 1979, 402],
+										[106, 31, 2017, 429, 65, 871, 24, 541, 656, 'M', 113, 12.6, 27, 05],
+										[107, 5, 2022, 784, 3304, 42, 733, 1224, 5801, 23, 1015, 84, 36, 029],
+										[108, 23, 174, 91, 947, 28, 527, 04, 0469, 2200, 88, 1985, 540, 3121]
+									]
+								}) %>								
+							</div><!--END data-cascade-->
 						</div>
 
 						<nav> <!-- BEGIN NAVBAR-->
 
-              <%- include('partials/links.ejs', 
-              {
-                
-                  links: [ 
-                            { 
-                              href: '' , target: "" , icon: '' , id: "b-one" , title: '', class:'' , text: '01', div_id:''
-                            }, {
-                              div_id:'blank'
-                            }, { 
-                              href: '' , target: "" , icon: '' , id: "b-three" , title: '', class:''  , text: '02', div_id:''
-                            }, {
-                              href: '' , target: "" , icon: '' , id: "b-four" , title: '', class:''  , text: '03', div_id:''
-                            }, {
-                              href: '' , target: "" , icon: '' , id: "b-five" ,title: '', class:'go-away'  , text: '04', div_id:''
-                             }, {
-                              href: '' , target: "" , icon: '' , id: "b-six" , title: '', class:''  , text: '05', div_id:''
-                            }
-                          ] 
-                
-                }
-                ) %>          
+							<%- include('partials/links.ejs', { links: [ { href: '' , target: "" , icon: '' ,
+								id: "b-one" , title: '' , class:'' , text: '01' , div_id:'' }, { div_id:'blank' }, {
+								href: '' , target: "" , icon: '' , id: "b-three" , title: '' , class:'' , text: '02' ,
+								div_id:'' }, { href: '' , target: "" , icon: '' , id: "b-four" , title: '' , class:'' ,
+								text: '03' , div_id:'' }, { href: '' , target: "" , icon: '' , id: "b-five" ,title: '' ,
+								class:'go-away' , text: '04' , div_id:'' }, { href: '' , target: "" , icon: '' ,
+								id: "b-six" , title: '' , class:'' , text: '05' , div_id:'' } ] } ) %>
 						</nav><!-- END NAVBAR-->
 					</div>
 					<div class="bar-panel first-bar-panel">
@@ -158,24 +90,24 @@
 						<!-- Start your content here. -->
 
 						<h1>Hello</h1>
-			
+
 						<h2>Welcome to LCARS <span class="go-tomato">Ultra</span> &#149; Classic Theme</h2>
 
 						<p>Replace this content with your own.</p>
 
 						<p>Live long and prosper.</p>
-						
+
 						<!-- End content area. -->
 
 						<footer>
-              <%- include('partials/footer.ejs') %>
+							<%- include('partials/footer.ejs') %>
 						</footer>
 					</main>
 				</div>
 			</div>
 		</section><!--id="column-3"-->
 	</div>
-	
+
 </body>
 
 </html>
