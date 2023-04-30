@@ -1,16 +1,16 @@
-<% var defaults = {content_file:'default-ultra.ejs' , title:'ULTRA Classic' , style:'ultra' } %>
-
+<% var defaults={ content_file:'default-ultra.ejs' , title:'ULTRA Classic' , style:'red-alert',
+	body:'body-red-alert.ejs' } %>
 	<!DOCTYPE html>
 	<html>
 
 	<head>
-		<%- include('partials/head.ejs',{title:defaults.title}) %>
+		<%- include('partials/head.ejs',{title:defaults.title, style: defaults.style}) %>
 	</head>
 
 
 	<body>
 
-		<%- include('partials/body-' + defaults.style + '.ejs',{title:defaults.title, content_file: defaults.content_file}) %>
+		<%- include('partials/' + defaults.body ,{title:defaults.title, content_file: defaults.content_file}) %>
 
 	</body>
 

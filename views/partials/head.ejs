@@ -2,12 +2,16 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="format-detection" content="date=no">
 
-<link rel="stylesheet" type="text/css" href="assets/lcars-ultra-classic.css">
-<link rel="stylesheet" type="text/css" href="assets/lcars-colors.css">
-<link rel='stylesheet' href='stylesheets/style.css' />
+<% if (style =='red-alert') { %>
+  <link rel="stylesheet" type="text/css" href="assets/lcars-red-alert.min.css">
+  <% } else { %>
+    <link rel="stylesheet" type="text/css" href="assets/lcars-ultra-classic.css">
+    <link rel="stylesheet" type="text/css" href="assets/lcars-colors.css">
+    <% } %>
+      <link rel='stylesheet' href='stylesheets/style.css' />
 
-<script src="assets/jquery-3.6.3.min.js"></script>
-<script type="text/javascript" src="assets/lcars.js"></script>
-<title>
-  <%= title %>
-</title>
+      <script src="assets/jquery-3.6.3.min.js"></script>
+      <script type="text/javascript" src="assets/lcars.js"></script>
+      <title>
+        <%= title %>
+      </title>
