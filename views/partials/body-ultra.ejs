@@ -1,0 +1,92 @@
+<div class="wrap-everything">
+    <!--id="column-1"-->
+    <section id="column-1">
+        <%- include('column-1.ejs') %>
+    </section><!--id="column-1"-->
+    <section id="column-2"><!--id="column-2"-->
+        <%- include('column-2.ejs') %>
+    </section><!--id="column-2"-->
+    <section id="column-3"><!--id="column-13"-->
+        <div class="wrap">
+            <div class="scroll-top"><a id="scroll-top" href=""><span class="hop">screen</span> top</a></div>
+            <div class="left-frame-top">
+                <div class="panel-1"><a href="">LCARS</a></div>
+                <div class="panel-2">02<span class="hop">-262000</span></div>
+            </div>
+            <div class="right-frame-top">
+                <div class="banner"> LCARS &#149; <span class="blink">Online</span> </div>
+                <div class="data-cascade-button-group">
+                    <div class="cascade-wrapper">
+                        <div class="data-cascade" id="default">
+                            <%- include('data-cascade.ejs',{ cascade: [ [101, 7109, 1966, 36, 880,
+                                11.03, 1954, 03, 6.08, 241, 309, 7.08, 1935, 12.20], [102, 8102, 1987, 044,
+                                0051, 1968, 704, 10.31, 1984, 1954, 764, 1940, 9.9, 1972], [103, 714, 1993,
+                                0222, 4.4, 1969, 2450, 91, 56, 21, 716, 801, 417, 602], [104, 6104, 1995, 3.22,
+                                1931, 0.0, 0000, 1701, 1984, 218, 908, 10, 85, 1888], [105, 08, 2001, 713, 079,
+                                1977, 'LV' , 426, 105, 10, 1642, 1979, 402], [106, 31, 2017, 429, 65, 871, 24,
+                                541, 656, 'M' , 113, 12.6, 27, 05], [107, 5, 2022, 784, 3304, 42, 733, 1224,
+                                5801, 23, 1015, 84, 36, 029], [108, 23, 174, 91, 947, 28, 527, 04, 0469, 2200,
+                                88, 1985, 540, 3121] ] }) %>
+                        </div><!--END data-cascade-->
+                    </div>
+
+                    <nav> <!-- BEGIN NAVBAR-->
+
+                        <%- include('links.ejs', { links: [ { href: '' , target: "" , icon: '' ,
+                            id: "b-one" , title: '' , class:'' , text: '01' , div_id:'' }, { div_id:'blank' }, {
+                            href: '' , target: "" , icon: '' , id: "b-three" , title: '' , class:'' , text: '02'
+                            , div_id:'' }, { href: '' , target: "" , icon: '' , id: "b-four" , title: '' ,
+                            class:'' , text: '03' , div_id:'' }, { href: '' , target: "" , icon: '' ,
+                            id: "b-five" ,title: '' , class:'go-away' , text: '04' , div_id:'' }, { href: '' ,
+                            target: "" , icon: '' , id: "b-six" , title: '' , class:'' , text: '05' , div_id:''
+                            } ] } ) %>
+                    </nav><!-- END NAVBAR-->
+                </div>
+                <div class="bar-panel first-bar-panel">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                    <div class="bar-4"></div>
+                    <div class="bar-5"></div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap" id="gap">
+            <div class="left-frame">
+                <div>
+                    <div class="panel-3">03<span class="hop">-111968</span></div>
+                    <div class="panel-4">04<span class="hop">-041969</span></div>
+                    <div class="panel-5">05<span class="hop">-1701D</span></div>
+                    <div class="panel-6">06<span class="hop">-071984</span></div>
+                    <div class="panel-7">07<span class="hop">-081940</span></div>
+                    <div class="panel-8">08<span class="hop">-47148</span></div>
+                    <div class="panel-9">09<span class="hop">-081966</span></div>
+                </div>
+                <div>
+                    <div class="panel-10">10<span class="hop">-31</span></div>
+                </div>
+            </div>
+            <div class="right-frame">
+                <div class="bar-panel">
+                    <div class="bar-6"></div>
+                    <div class="bar-7"></div>
+                    <div class="bar-8"></div>
+                    <div class="bar-9"></div>
+                    <div class="bar-10"></div>
+                </div>
+                <main>
+
+                    <!-- Start your content here. -->
+
+                    <%- include('../content/'+content_file),{} %>
+
+                        <!-- End content area. -->
+
+                        <footer>
+                            <%- include('footer.ejs') %>
+                        </footer>
+                </main>
+            </div>
+        </div>
+    </section><!--id="column-3"-->
+</div>
