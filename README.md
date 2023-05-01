@@ -1,7 +1,7 @@
 # LCARS-ExpressJS
 An Express.js and EJS implementation of the LCARS interface implemented  by Jim Robertus @ https://www.thelcars.com/
 
-It's currently a lot of ESJ so far and the biolerplate Express. Some data is getting passed between pages using strings in the templates. Eventually, the Express middleware will read json data out of tiles, to pass into the templates.
+It's currently a lot of EJS so far and the biolerplate Express. Some data is getting passed between pages using strings in the templates. Eventually, the Express middleware will read json data out of files, to pass into the templates.
 
 About me: I'm learning ExpressJS and EJS for work.
 
