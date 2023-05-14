@@ -1,12 +1,12 @@
 <div class="wrap-everything">
-    <!--id="column-1"-->
+    <!--id=column-1-->
     <section id="column-1">
         <%- include('column-1.ejs') %>
-    </section><!--id="column-1"-->
-    <section id="column-2"><!--id="column-2"-->
+    </section><!--id=column-1-->
+    <section id="column-2"><!--id=column-2-->
         <%- include('column-2.ejs') %>
-    </section><!--id="column-2"-->
-    <section id="column-3"><!--id="column-13"-->
+    </section><!--id=column-2-->
+    <section id="column-3"><!--id=column-13-->
         <div class="wrap">
             <div class="scroll-top"><a id="scroll-top" href=""><span class="hop">screen</span> top</a></div>
             <div class="left-frame-top">
@@ -16,23 +16,9 @@
             <div class="right-frame-top">
                 <div class="banner"> LCARS &#149; <span class="blink">Online</span> </div>
                 <div class="data-cascade-button-group">
-                    <div class="cascade-wrapper">
-                        <div class="data-cascade" id="default">
-                            <%- include('data-cascade.ejs',
-                                { 
-                                    cascade: [ 
-                                      ['101', '7109', '1966', '36', '880', '11.03', '1954', '03', '6.08', '241', '309', '7.08', '1935', '12.20']
-                                    , ['102', '8102', '1987', '044', '0051', '1968', '704', '10.31', '1984','1954', '764', '1940', '9.9','1972']
-                                    , ['103', '714', '1993', '0222', '4.4', '1969', '2450', '91', '56', '21', '716', '801', '417', '602']
-                                    , ['104', '6104', '1995', '3.22', '1931', '0.0', '0000', '1701', '1984', '218', '908', '10', '85', '1888']
-                                    , ['105', '08', '2001', '713', '079', '1977', 'LV' , '426', '105', '10', '1642', '1979', '402']
-                                    , ['106', '31', '2017', '429', '65','871', '24', '541', '656', 'M' , '113', '12.6', '27', '05']
-                                    , ['107', '5', '2022', '784', '3304', '42', '733', '1224', '5801', '23', '1015', '84', '36', '029']
-                                    , ['108', '23', '174', '91', '947', '28', '527', '04', '0469', '2200', '88', '1985', '540', '3121'] 
-                                    ]   
-                                 }) %>
-                        </div><!--END data-cascade-->
-                    </div>
+                    <div class="cascade-wrapper"><!--BEGIN cascade-wrapper-->
+                        <%- include('cascade-wrapper.ejs') %>
+                    </div><!--END cascade-wrapper-->
 
                     <nav> <!-- BEGIN NAVBAR-->
 
@@ -91,5 +77,5 @@
                 </main>
             </div>
         </div>
-    </section><!--id="column-3"-->
+    </section><!--id=column-3-->
 </div>
